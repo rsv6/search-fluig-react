@@ -22,48 +22,40 @@ function App() {
 
   return (
     <div className="App principal">
-      <div className='num_fluig'>
-        <br/>
+      <br/>
         <input type="text" value={input} 
           onChange={e=>setInput(e.target.value)} 
           onKeyUp={varrer(input)}
-          placeholder='Buscar pelo numero fluig'
-          size={20}
-        />
-        <hr/>
-
-        <div id='lista' className='lista'>
-          {fluigs.map(f => {
-              return (
-                <a key={f.num_fluig} href='#' className='pai'>
-                  <p className='filho'>{f.num_fluig}</p>
-                </a>
-              )
-            })
-          }
-        </div>
-      </div>
-
-      <div className='desc_fluig'> 
-      <br/>
-        <input type="text" value={inputDesc} 
-          onChange={e=>setInputDesc(e.target.value)} 
-          onKeyUp={varrerDesc(inputDesc)}
-          placeholder='Buscar pelo descricao do fluig'
+          placeholder='Buscar pelo numero ou descricao fluig'
           size={50}
         />
-        <hr/>
-        
-        <div id='listaDesc' className='listaDesc'>
-          {desc.map((d, index) => {
-              return (
-                <a key={index} href='#' className='paiDesc'>
-                  <p className='filhoDesc'>{d}</p>
-                </a>
-              )
-            })
-          }
+      <hr/>
+      <div className='block-principal'>
+
+        <div className='num_fluig'>
+          <div id='lista' className='lista'>
+            {fluigs.map(f => {
+                return (
+                  <a key={f.num_fluig} href='#' className='pai'>
+                    <p className='filho'>{f.num_fluig} - {f.desc_fluig}</p>
+                  </a>
+                )
+              })
+            }
+          </div>
         </div>
+        {/* <div className='desc_fluig'>
+          <div id='listaDesc' className='listaDesc'>
+            {desc.map((d, index) => {
+                return (
+                  <a key={index} href='#' className='paiDesc'>
+                    <p className='filhoDesc'>{d}</p>
+                  </a>
+                )
+              })
+            }
+          </div>
+        </div> */}
       </div>
     </div>
   );

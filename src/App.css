@@ -13,6 +13,10 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -38,14 +42,21 @@
 }
 
 .principal {
-  display: flex;
+  /* display: flex; */
   margin-left: 10px;
 }
 
+.block-principal {
+  display: flex;
+  justify-content: center;
+}
+
 .num_fluig {
-  background-color: azure;
+  width: 50rem;
+  background-color: darkorange;
 }
 
 .desc_fluig {
+  width: 20rem;
   background-color: darkorange;
 }
