@@ -1,5 +1,7 @@
 import React from "react";
 
+
+// apenas para subir o git
 export const varrer = (input) => {
   var lista, pai, filho, i, p, txtValue
 
