@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.principal {
+  display: flex;
+  margin-left: 10px;
+}
+
+.num_fluig {
+  background-color: azure;
+}
+
+.desc_fluig {
+  background-color: darkorange;
+}

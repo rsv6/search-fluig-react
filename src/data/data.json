@@ -1,10 +1,10 @@
 [
-  {"num_fluig": 123456},
-  {"num_fluig": 654321},
-  {"num_fluig": 398765},
-  {"num_fluig": 567890},
-  {"num_fluig": 789456},
-  {"num_fluig": 987654},
-  {"num_fluig": 369852},
-  {"num_fluig": 348764}
+  {"num_fluig": 123456, "desc_fluig": "Cancelar pedido"},
+  {"num_fluig": 654321, "desc_fluig": "Nota rejeitada Sefaz"},
+  {"num_fluig": 398765, "desc_fluig": "Separacao de lote"},
+  {"num_fluig": 567890, "desc_fluig": "Cancelar nota de saida"},
+  {"num_fluig": 789456, "desc_fluig": "Liberar faturamente"},
+  {"num_fluig": 987654, "desc_fluig": "Ajustar no crc"},
+  {"num_fluig": 369852, "desc_fluig": "Diferenca de 0.01"},
+  {"num_fluig": 348764, "desc_fluig": "Criar email"}
 ]
